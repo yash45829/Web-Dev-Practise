@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="./contact.css" />
+
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:wght@400;500;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <form name="form" method="post">
+        <p>Contact Form</p>
+        <!-- name -->
+        <label for="name"> Name </label>
+        <input
+          type="text"
+          name="name"
+          required
+          id="name"
+          placeholder="Enter your name"
+        />
+
+        <!-- email  -->
+        <label for="email"> Email </label>
+        <input
+          required
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+        />
+        <!-- phone number  -->
+        <label for="number"> Phone Number </label>
+
+        <input
+          required
+          type="tel"
+          name="number"
+          id="number"
+          maxlength="10"
+          placeholder="Enter your phone number"
+        />
+
+        <!-- password  -->
+        <label for="password"> Password </label>
+
+        <input
+          required
+          type="password"
+          name="password"
+          id="password"
+          minlength="8"
+          maxlength="12"
+          placeholder="Enter your password"
+        />
+        <!-- age  -->
+        <label for="age"> Age </label>
+
+        <input
+          required
+          type="tel"
+          name="age"
+          id="age"
+          minlength="1"
+          maxlength="3"
+          placeholder="Enter your age"
+        />
+        <!-- gender  -->
+        <label for="gender"> Gender </label>
+        <div>
+          <input required type="radio" name="gender" value="male" /> Male
+          <input required type="radio" name="gender" value="female" /> Female
+        </div>
+        <!-- date  -->
+        <label for="date"> Date </label>
+
+        <input required type="date" name="date" id="date" />
+        <!-- color picker  -->
+        <label for="colorpicker"> Color Picker </label>
+
+        <input
+          class="color"
+          required
+          type="color"
+          name="colorpicker"
+          id="colorpicker"
+        />
+        <!-- message  -->
+        <label for="message">Message</label>
+
+        <textarea
+          name="message"
+          placeholder="Enter your message"
+          id="message"
+          cols="32"
+          rows="5"
+        ></textarea>
+
+        <button type="submit" class="submit" value="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
