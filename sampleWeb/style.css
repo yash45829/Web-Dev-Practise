@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* this is a basic website so i am targeting tags directly . */
+body {
+  background-color: rgb(212, 238, 238);
+  font-family: "Poppins", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20%;
+}
+ul {
+  display: flex;
+  margin: 25px 20px;
+  align-items: center;
+}
+li {
+  list-style: none;
+  padding: 10px 8px;
+}
+a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #0e0d0d;
+}
+a:hover {
+  cursor: pointer;
+}
+.midlogo {
+  font-size: 38px;
+  font-weight: 700;
+}
+input {
+  height: 28px;
+  border-radius: 20px;
+  border: none;
+}
+button {
+  padding: 6px 18px;
+  border-radius: 28px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  background-color: rgb(204, 202, 202);
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgb(238, 232, 232);
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 84.5vh;
+}
+.left {
+  margin-left: 60px;
+  padding: 10px;
+}
+
+.right {
+  height: 100%;
+  width: 50%;
+}
+.heading {
+  font-size: 44px;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+p {
+  padding: 10px 0px;
+}
+footer {
+  background-color: rgba(20, 20, 20, 0.699);
+  padding: 20px 20px;
+  width: 100%;
+  position: fixed;
+  color: white;
+  bottom: 0px;
+}
