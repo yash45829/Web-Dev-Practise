@@ -1,4 +1,4 @@
-<h1>TML Form Page</h1>
+<h1>HTML Form Page</h1>
 <h2>Preview</h2>
 <p>Using HTML and CSS</p>
 <p>Form Validations are implemented on every field like input required , minimum length , max length ,etc. </p>
