@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(190, 217, 230);
+}
+body {
+  padding: 1vw;
+}
+header {
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  column-gap: 10px;
+}
+.logo {
+  margin: 1vh 0vh;
+  background-color: rgb(112, 154, 202);
+  width: 40%;
+}
+nav {
+  margin: 1vh 0vh;
+  background-color: rgb(166, 156, 194);
+  width: 60%;
+}
+main {
+  background-color: rgb(145, 143, 148);
+  height: 60vh;
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.cards {
+  width: 100%;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+}
+.card {
+  background-color: rgb(212, 149, 165);
+  height: 50vh;
+  width: 30%;
+}
+footer {
+  background-color: rgb(129, 134, 122);
+  height: 30vh;
+  width: 100%;
+  margin-top: 20px;
+}
+/* tablet -> 425 or above
+laptop -> 768 or above */
+/* for mobile  */
+@media (max-width: 425px) {
+  main {
+    height: 30vh;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card {
+    width: 100%;
+    height: 20vh;
+    margin: 5px 0px;
+  }
+  footer {
+    height: 20vh;
+  }
+}
+/* for tablet  */
+@media ((min-width: 425px) and (max-width:768px)) {
+  main {
+    height: 25vh;
+  }
+  .card {
+    height: 30vh;
+  }
+  footer {
+    height: 19vh;
+  }
+}
