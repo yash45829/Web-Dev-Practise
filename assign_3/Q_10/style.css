@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: aliceblue;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.scroll {
+  overflow-x: auto;
+  height: 70%;
+  width: 60%;
+  overflow-x: auto;
+}
+
+th {
+  text-align: center;
+  padding: 5px;
+}
+td {
+  padding: 4px 80px;
+  border-bottom: 1pt solid white;
+}
