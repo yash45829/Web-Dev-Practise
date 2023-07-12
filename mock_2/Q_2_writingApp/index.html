@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- style  -->
+    <style>
+      #app {
+        margin: 20px;
+      }
+      #text-list {
+        list-style-type: none;
+        padding: 0;
+      }
+      #text-list li {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app">
+      <input type="text" id="input-box" placeholder="Enter text" />
+      <button id="submit-button">Submit</button>
+      <ul id="text-list"></ul>
+    </div>
+    <!-- javaScript  -->
+
+    <script>
+
+      const inputBox = document.getElementById("input-box");
+      const submitButton = document.getElementById("submit-button");
+      const textList = document.getElementById("text-list");
+
+      submitButton.addEventListener("click", function () {
+        const userInput = inputBox.value.trim();
+        // adding text to li and then appending it to ul 
+        if (userInput !== "") {
+          const listItem = document.createElement("li");
+          listItem.textContent = userInput;
+          textList.appendChild(listItem);
+          inputBox.value = "";
+        }
+      });
+    //  if enter is pressed
+      inputBox.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          submitButton.click();
+        }
+      });
+    </script>
+  </body>
+</html>
